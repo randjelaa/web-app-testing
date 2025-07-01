@@ -1,0 +1,9 @@
+Greske u serverskoj aplikaciji:
+ - koristeci test ADD 1 pronadjena je greska pri dodavanju studenta - ime studenta se cuva malim slovom iako je zadato prvo pocetno veliko
+ - koristeci test PUT pronadjena je greska pri izmjeni studenta - prilikom izmjene samo imena studentBranch je postavljen na null
+ - koristeci test DELETE WITHOUT ID pronadjena je greska pri pokusaju brisanja studenta koji ne postoji - vraca se status 200 umjesto 404
+
+Greske u klijentskoj aplikaciji: (pokrenuti testovi redom AddTest, UpdateTest, DeleteTest, ViewAllTest; imala sam problem pri koristenju selenium devtools biblioteke pa nisam mogla kroz testove da provjerim neke stvari nego rucno)
+ - podaci koje unesemo u formu za dodavanje studenta nisu oni koje saljemo jer se ime i email studenta zamijene
+ - pri prikazivanju podataka polje gdje treba da bude email studenta je null iako dobija prave podatke od backend-a
+ - pri izmjeni studenta ne saljemo ime koje smo unijeli, a email i branch saljemo, medjutim pri prikazivanju sva tri polja su prazan string

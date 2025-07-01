@@ -1,0 +1,956 @@
+{
+  "id": "521adabc-10a2-4d43-94ba-e778af691ebb",
+  "version": "2.0",
+  "name": "Andjela_Radakovic",
+  "url": "http://localhost:4200",
+  "tests": [{
+    "id": "a6b16af6-f0d9-4654-9892-226e992612c6",
+    "name": "1Add",
+    "commands": [{
+      "id": "9bbe910a-443b-4761-9a46-d66cd62d975a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "45ff52f7-1c01-488e-ad0d-f5a36a38d05e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "792x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aa4cbf45-b9e9-4964-88fa-7ed798314e31",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Add Student",
+      "targets": [
+        ["linkText=Add Student", "linkText"],
+        ["css=.nav-item:nth-child(2) > .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Add Student')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/add-student')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Add Student')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5fc20df5-0836-44c4-bb66-97c98cd27d0e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(1) > .form-control",
+      "targets": [
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d090214-93c0-4643-afc7-c8c98ccf3790",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=/html/body/app-root/div/app-add-student/div[1]/div[2]/div/form/div[1]/input",
+      "targets": [
+        ["css=.ng-dirty:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Marko"
+    }, {
+      "id": "230eeb99-02fa-472f-8f88-0894729040a9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-invalid:nth-child(2)",
+      "targets": [
+        ["css=.ng-invalid:nth-child(2)", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "addd9cf8-9fa3-47d5-96c7-d57226a1fe11",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-group:nth-child(2) > .form-control",
+      "targets": [
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "marko@email.com"
+    }, {
+      "id": "4bdeb608-2023-4765-be48-6d68b63812f2",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=/html/body/app-root/div/app-add-student/div[1]/div[2]/div/form/div[3]/select",
+      "targets": [
+        ["css=.ng-untouched", "css:finder"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "117a21e1-65bc-4fbe-b478-bb0c04ac6f6c",
+      "comment": "",
+      "command": "select",
+      "target": "css=.ng-untouched",
+      "targets": [],
+      "value": "label=B-Tech"
+    }, {
+      "id": "5222df3d-3c70-4688-98f9-23498679fbf5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "52e43ef8-49c4-425f-a090-701cd5242b32",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=View Student",
+      "targets": [
+        ["linkText=View Student", "linkText"],
+        ["css=.nav-item:nth-child(1) > .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'View Student')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/view-student')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'View Student')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c77a25e6-e06b-4f1d-b3a4-c50e5ba4db6e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.sorting_1",
+      "targets": [],
+      "value": "Marko"
+    }, {
+      "id": "4063170b-affb-4b29-9081-963b388b9ef7",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=td:nth-child(2)",
+      "targets": [],
+      "value": "marko@email.com"
+    }, {
+      "id": "dde33489-c03f-4ade-922b-d15d7a295791",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=td:nth-child(3)",
+      "targets": [],
+      "value": "B-Tech"
+    }, {
+      "id": "cdaa5f66-dcee-4eaa-9906-e1c95eb6658c",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "edbc3d78-9466-475d-8c6a-973822d91530",
+    "name": "2Update",
+    "commands": [{
+      "id": "bd9e5e58-5f03-4df4-822b-f3cfe344a655",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f5558c11-935c-405a-b018-44d7c8534270",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "794x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "76e106fe-c371-45f0-a1f8-826279a6f69a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-info",
+      "targets": [
+        ["css=.btn-info", "css:finder"],
+        ["xpath=//table[@id='DataTables_Table_0']/tbody/tr/td[4]/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Update')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a00cc6a-3b34-4f57-ac17-50043e337f23",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(2) > .form-control",
+      "targets": [
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='myModal']/div/div/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e498e70a-155b-48be-8f3c-aca22a937e01",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//*[@id=\"myModal\"]/div/div/form/div[2]/div[1]/div[1]/input",
+      "targets": [
+        ["css=.ng-dirty:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='myModal']/div/div/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "Marko"
+    }, {
+      "id": "570b5acb-7bf6-4c56-a719-ccf4e8ffb237",
+      "comment": "",
+      "command": "click",
+      "target": "css=.modal-body",
+      "targets": [
+        ["css=.modal-body", "css:finder"],
+        ["xpath=//div[@id='myModal']/div/div/form/div[2]", "xpath:idRelative"],
+        ["xpath=//form/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b7191420-4b9b-4702-93da-98e80f99bbf0",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-group:nth-child(3) > .form-control",
+      "targets": [
+        ["css=.form-group:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='myModal']/div/div/form/div[2]/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "marko@email.com"
+    }, {
+      "id": "e5fe8c0d-3b86-4c5e-807f-299b233cc22d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='myModal']/div/div/form/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "decf59ac-37ec-402e-a8ac-9d3e2a8a3a81",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-danger",
+      "targets": [
+        ["css=.btn-danger", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='myModal']/div/div/form/div[3]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Close')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2470f02-0db8-4516-9707-f23cadfc8564",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//*[@id=\"DataTables_Table_0\"]/tbody/tr/td[1]",
+      "targets": [],
+      "value": "Marko"
+    }, {
+      "id": "0ff939c0-2e4d-484f-adfa-918270da174a",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//*[@id=\"DataTables_Table_0\"]/tbody/tr/td[2]",
+      "targets": [],
+      "value": "marko@email.com"
+    }, {
+      "id": "42288443-772a-453e-bcbe-69b67bcd0b8e",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//*[@id=\"DataTables_Table_0\"]/tbody/tr/td[3]",
+      "targets": [],
+      "value": "B-Tech"
+    }, {
+      "id": "56dda04d-a60e-4360-8dec-819bde172cd4",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "b7d936de-16a8-4839-8909-bbaa9002683f",
+    "name": "3Delete",
+    "commands": [{
+      "id": "94e816e1-0f4d-4147-94b8-1f50c1fc37aa",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "82bc3db1-d676-4d43-8ac6-7daa86e06d9b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "794x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "48aa05e1-6acb-431a-b920-b664e8e97eae",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa",
+      "targets": [
+        ["css=.fa", "css:finder"],
+        ["xpath=//table[@id='DataTables_Table_0']/tbody/tr/td[4]/button/i", "xpath:idRelative"],
+        ["xpath=//i", "xpath:position"],
+        ["xpath=//i[contains(.,'Delete')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b1514c1-e8b1-4da8-9bdb-1a8610c2f361",
+      "comment": "",
+      "command": "click",
+      "target": "css=.close",
+      "targets": [
+        ["css=.close", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'×')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c8110f6-5d75-4e5f-b546-4b3314d94e3a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=View Student",
+      "targets": [
+        ["linkText=View Student", "linkText"],
+        ["css=.nav-item:nth-child(1) > .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'View Student')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/view-student')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'View Student')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b062d67-bb52-4263-93df-22712ffdec05",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "0b30d2b5-24d1-4350-bd9a-69b4bb8a1299",
+    "name": "4View all",
+    "commands": [{
+      "id": "36f5aa33-ff7b-4246-9a7b-c03e2eac9656",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d37f91cb-3608-49b5-be51-bb1f6d6b4826",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "794x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b3516476-2136-41d6-bf8d-963ab416555e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Add Student",
+      "targets": [
+        ["linkText=Add Student", "linkText"],
+        ["css=.nav-item:nth-child(2) > .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Add Student')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/add-student')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Add Student')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "14839cb6-b84d-4695-8ed0-d7ba2406da1a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(1) > .form-control",
+      "targets": [
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c3253596-6ef4-4860-82a2-63d4e9b82ccf",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=/html/body/app-root/div/app-add-student/div[1]/div[2]/div/form/div[1]/input",
+      "targets": [
+        ["css=.ng-dirty:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Marko"
+    }, {
+      "id": "3da3d6f1-15f8-4ce8-b3ba-83599d0d3dc2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-invalid:nth-child(2)",
+      "targets": [
+        ["css=.ng-invalid:nth-child(2)", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "26a9c5a2-c4d7-4c71-8450-529d5e421f71",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-group:nth-child(2) > .form-control",
+      "targets": [
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "marko@email.com"
+    }, {
+      "id": "4abdbcb6-005d-46c4-840f-b005c45a9a0d",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=/html/body/app-root/div/app-add-student/div[1]/div[2]/div/form/div[3]/select",
+      "targets": [
+        ["css=.ng-untouched", "css:finder"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c925600-0bc5-4073-8b5e-b763ecb43d78",
+      "comment": "",
+      "command": "select",
+      "target": "css=.ng-untouched",
+      "targets": [],
+      "value": "label=B-Tech"
+    }, {
+      "id": "c6328fc5-4d3e-4d3e-92ab-a5f7de48a7f6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d0d659b-ae1f-4d60-994f-6f5c3b9bd0ef",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(2)",
+      "targets": [
+        ["css=.btn:nth-child(2)", "css:finder"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add More Student')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c58d2cb1-d06e-4d1d-ac88-69dcdef52a53",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(1) > .form-control",
+      "targets": [
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bcdffc3b-a4a4-4f30-afb7-5e64a43878f2",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=/html/body/app-root/div/app-add-student/div[1]/div[2]/div/form/div[1]/input",
+      "targets": [
+        ["css=.ng-dirty:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Marija"
+    }, {
+      "id": "9d004f2e-a709-4f59-bd97-395a6e6c0aaf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-invalid:nth-child(2)",
+      "targets": [
+        ["css=.ng-invalid:nth-child(2)", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "23542d39-0b39-4073-b238-022975163853",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-group:nth-child(2) > .form-control",
+      "targets": [
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "marija@email.com"
+    }, {
+      "id": "3f93eb3a-9438-4068-b187-86186dd9349e",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=/html/body/app-root/div/app-add-student/div[1]/div[2]/div/form/div[3]/select",
+      "targets": [
+        ["css=.ng-untouched", "css:finder"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1038bc24-dc76-4848-8571-571ed020bc04",
+      "comment": "",
+      "command": "select",
+      "target": "css=.ng-untouched",
+      "targets": [],
+      "value": "label=BCA"
+    }, {
+      "id": "9f52c82d-7989-4612-9f85-6b2161c3cad5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b428301-6074-492d-900d-e7d69d0b343f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(2)",
+      "targets": [
+        ["css=.btn:nth-child(2)", "css:finder"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add More Student')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "df846b73-c310-49f7-bd89-d3ecc3da6312",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(1) > .form-control",
+      "targets": [
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "58c23d16-3e7f-42f5-b19d-cd6f0a7ba759",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=/html/body/app-root/div/app-add-student/div[1]/div[2]/div/form/div[1]/input",
+      "targets": [
+        ["css=.ng-dirty:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Sergej"
+    }, {
+      "id": "c101be49-3db7-4884-be22-fcaa63cb0cee",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-invalid:nth-child(2)",
+      "targets": [
+        ["css=.ng-invalid:nth-child(2)", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e2084e1f-50f2-4062-8ba9-04fa60faf9a8",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-group:nth-child(2) > .form-control",
+      "targets": [
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "sergej@email.com"
+    }, {
+      "id": "f139cd66-76a2-47b4-bdeb-9049bdbadbf4",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=/html/body/app-root/div/app-add-student/div[1]/div[2]/div/form/div[3]/select",
+      "targets": [
+        ["css=.ng-untouched", "css:finder"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "67933b42-35d8-4f81-bb63-07b2d29e0921",
+      "comment": "",
+      "command": "select",
+      "target": "css=.ng-untouched",
+      "targets": [],
+      "value": "label=MCA"
+    }, {
+      "id": "3e165e1d-ea9e-4ba6-a8d8-8c34e50a77fb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd728c7a-6c93-4c32-aa4d-379d6b97714e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(2)",
+      "targets": [
+        ["css=.btn:nth-child(2)", "css:finder"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add More Student')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff175007-1a7f-4140-97d9-6fb8ff0fb7ae",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(1) > .form-control",
+      "targets": [
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4c55e4b-ebd7-4d42-9733-12232207cb24",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=/html/body/app-root/div/app-add-student/div[1]/div[2]/div/form/div[1]/input",
+      "targets": [
+        ["css=.ng-dirty:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Anastasija"
+    }, {
+      "id": "4b660bc6-9312-4876-b098-adee89cff7e2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-invalid:nth-child(2)",
+      "targets": [
+        ["css=.ng-invalid:nth-child(2)", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "573be61c-a5cf-41ba-be63-07b3ef552fc5",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-group:nth-child(2) > .form-control",
+      "targets": [
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "anastasija@email.com"
+    }, {
+      "id": "814953f9-fc4c-4618-84ae-b11eccfb2a98",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=/html/body/app-root/div/app-add-student/div[1]/div[2]/div/form/div[3]/select",
+      "targets": [
+        ["css=.ng-untouched", "css:finder"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "90f34265-2b7e-4f02-9de1-c67bc6dde4bd",
+      "comment": "",
+      "command": "select",
+      "target": "css=.ng-untouched",
+      "targets": [],
+      "value": "label=M-Tech"
+    }, {
+      "id": "3f535a2d-d78a-463b-8bb2-9b96c3ab50e8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "29cb0f33-0ede-4a7c-b44a-ab07cdbb470f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(2)",
+      "targets": [
+        ["css=.btn:nth-child(2)", "css:finder"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add More Student')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "169d13d9-418e-40b0-b31d-6dc9bd7337db",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(1) > .form-control",
+      "targets": [
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e152e9b2-a3ba-47b9-bdf3-ee5a71b4c1e6",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=/html/body/app-root/div/app-add-student/div[1]/div[2]/div/form/div[1]/input",
+      "targets": [
+        ["css=.ng-dirty:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Djordje"
+    }, {
+      "id": "58394e23-8461-43bb-8492-16e4c5592101",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-group:nth-child(2) > .form-control",
+      "targets": [
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "djordje@email.com"
+    }, {
+      "id": "aca6e598-7896-46c1-b22b-022d5958e763",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=/html/body/app-root/div/app-add-student/div[1]/div[2]/div/form/div[3]/select",
+      "targets": [
+        ["css=.ng-untouched", "css:finder"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "79076dca-6a98-4470-bb7c-0f0550d9fe7f",
+      "comment": "",
+      "command": "select",
+      "target": "css=.ng-untouched",
+      "targets": [],
+      "value": "label=B-Tech"
+    }, {
+      "id": "458b5895-1ede-404a-882a-3699dcf9f857",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "50d2fefd-b59d-42a6-a36d-654a0a498596",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(2)",
+      "targets": [
+        ["css=.btn:nth-child(2)", "css:finder"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add More Student')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "57cf74b2-b27f-43d1-a4db-88fd3746e6e7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(1) > .form-control",
+      "targets": [
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "902b119f-464b-4d60-a484-e24d4e34d4ca",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=/html/body/app-root/div/app-add-student/div[1]/div[2]/div/form/div[1]/input",
+      "targets": [
+        ["css=.ng-dirty:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Andjela"
+    }, {
+      "id": "8b58a01a-6b04-445a-b4ec-c32504b8f43b",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-group:nth-child(2) > .form-control",
+      "targets": [
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "andjela@email.com"
+    }, {
+      "id": "e3e737fe-52a4-44d1-a3e4-edfef590b655",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=/html/body/app-root/div/app-add-student/div[1]/div[2]/div/form/div[3]/select",
+      "targets": [
+        ["css=.ng-untouched", "css:finder"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "871b797a-ec78-413e-a891-8c966637e6fc",
+      "comment": "",
+      "command": "select",
+      "target": "css=.ng-untouched",
+      "targets": [],
+      "value": "label=BCA"
+    }, {
+      "id": "497f3091-58dc-4589-a26b-f5cec96a104c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "050cd624-20f7-4304-954b-d31d3ad8f3a8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(2)",
+      "targets": [
+        ["css=.btn:nth-child(2)", "css:finder"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add More Student')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "644e817d-270a-4cda-add3-1fd0d28a3178",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(1) > .form-control",
+      "targets": [
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a5188547-f911-48da-ad9a-36e5adab49c7",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=/html/body/app-root/div/app-add-student/div[1]/div[2]/div/form/div[1]/input",
+      "targets": [
+        ["css=.ng-dirty:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Petar"
+    }, {
+      "id": "3dbc6613-75da-403d-9778-7468dac2f998",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-group:nth-child(2) > .form-control",
+      "targets": [
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "petar@email.com"
+    }, {
+      "id": "6312330d-05b3-48e8-ae79-4bafaf3b60c0",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=/html/body/app-root/div/app-add-student/div[1]/div[2]/div/form/div[3]/select",
+      "targets": [
+        ["css=.ng-untouched", "css:finder"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b076428f-b16e-4f4e-94e3-7ff5d243b9bf",
+      "comment": "",
+      "command": "select",
+      "target": "css=.ng-untouched",
+      "targets": [],
+      "value": "label=BCA"
+    }, {
+      "id": "ad2212a4-92f6-4b3f-b407-72c6b3364f48",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "989f1a46-9f77-4c11-b0ac-ad436aa19d51",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=View Student",
+      "targets": [
+        ["linkText=View Student", "linkText"],
+        ["css=.nav-item:nth-child(1) > .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'View Student')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/view-student')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'View Student')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bfe6c2d7-1023-496f-a25d-0f0820f00939",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=2",
+      "targets": [
+        ["linkText=2", "linkText"],
+        ["css=.paginate_button:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'2')]", "xpath:link"],
+        ["xpath=//div[@id='DataTables_Table_1_paginate']/span/a[2]", "xpath:idRelative"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'2')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "2b512b21-e118-4d70-a703-2de59baf2775",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost:4200/"],
+  "plugins": []
+}
